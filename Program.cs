@@ -1,26 +1,23 @@
-﻿namespace SerVivo
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
 {
-
-    internal class Program {
-
+    internal class Program
+    {
         static void Main(string[] args)
         {
-            Console.WriteLine("== SER VIVO ==");
+            Temp t1 = new Temp();
 
-            SerVivo sv = new();
-            sv.Nascer();
-            sv.Cresce();
-            sv.Morrer();
+            t1.converge();
 
-            Console.WriteLine("== ANIMAL ==");
-            Animal an = new();
-            an.Mover();
-            an.Respirar();
-            an.Nascer();
+            //DEVO CORRIGIR ESSE CODIGO E TROCAR A CLASSE TEMP E BOTAR NA MAIN
 
+            Console.WriteLine("Pressione qualquer tecla para sair ");
+            Console.ReadKey();
         }
-        
-    
     }
-
 }
